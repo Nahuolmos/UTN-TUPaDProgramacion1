@@ -27,3 +27,13 @@ elif nota > 0 and nota < nota_aprobacion:
     print("Desaprobado")
 else:
     print("Valor inválido")
+
+#----------------------------------------Ejercicio 3----------------------------------------
+#Solicitamos ingresar numeros al usuario y lo guardamos en la variable num
+#De tipo entero para poder evaluar si es par
+num : int = int(input("Ingrese un número par: "))
+
+if num%2 == 0:
+    print("Ha ingresado un número par")
+else:
+    print("Por favor, ingrese un número par")
