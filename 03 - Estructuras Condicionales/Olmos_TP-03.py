@@ -61,3 +61,33 @@ if 8 <= len(password) <= 14:
     print("Ha ingresado una contraseña correcta")
 else:
     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
+
+#----------------------------------------Ejercicio 6----------------------------------------
+# Importamos mode, median y mean desde la libreria statistics
+from statistics import mode, median, mean
+# Importamos la libreria random
+import random
+# Creamos nuestra lista de números aleatorios
+nums_aleatorios = [random.randint(1, 100) for i in range(50)]
+
+# Definimos media, mediana y moda
+media = mean(nums_aleatorios)
+mediana = median(nums_aleatorios)
+try:
+    moda = mode(nums_aleatorios)
+except:
+    # En caso de que no haya una moda clara (Recomendación de chatGPT)
+    moda = None
+
+# Definimos el sesgo
+if moda is not None:
+    if media > mediana > moda:
+        print("Sesgo positivo (hacia la derecha)")
+    elif media < mediana < moda:
+        print("Sesgo negativo (hacia la izquierda)")
+    elif media == mediana == moda:
+        print("Sin sesgo")
+    else:
+        print("Sin sesgo claro según los criterios dados")
+else:
+    print("No se puede determinar el sesgo por falta de moda clara")
