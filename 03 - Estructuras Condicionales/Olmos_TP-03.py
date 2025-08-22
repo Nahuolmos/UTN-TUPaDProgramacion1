@@ -37,3 +37,18 @@ if num%2 == 0:
     print("Ha ingresado un número par")
 else:
     print("Por favor, ingrese un número par")
+    
+#----------------------------------------Ejercicio 4----------------------------------------
+# Solicitamos edad al usuario y lo guardamos en la variable "edad"
+edad : int = int(input("Ingrese su edad: "))
+
+#Clasificamos al usuario
+if edad > 0 and edad < 12:
+    print("Categoría: Niño/a")
+elif edad >= 12 and edad < 18:
+    print("Categoría: Adolescente") 
+elif edad >= 18 and edad < 30:
+    print("Categoría: Adulto/a joven")
+elif edad >= 30:
+    print("Categoría: Adulto/a")
+
