@@ -128,3 +128,22 @@ else:
     resultado = "Opción inválida"
 
 print("Resultado:", resultado)
+
+#----------------------------------------Ejercicio 9----------------------------------------
+# Solicitamos al usuario que ingrese la magnitud del terremoto para clasificarlo
+magnitud : float = float(input("Ingrese la magnitud del terremoto: "))
+# Creamos los parámetros de clasificación y los imprimimos por pantalla
+if magnitud > 0 and magnitud < 3:
+    print("Categoría: Muy leve (imperceptible)")
+elif magnitud >= 3 and magnitud < 4:
+    print("Categoría: Leve (ligeramente perceptible)")
+elif magnitud >= 4 and magnitud < 5:
+    print("Categoría: Moderado")
+elif magnitud >= 5 and magnitud < 6:
+    print("Categoría: Fuerte")
+elif magnitud >= 6 and magnitud < 7:
+    print("Categoría: Muy Fuerte")
+elif magnitud >= 7:
+    print("Categoría: Extremo")
+else:
+    print("Opción Inválida")
