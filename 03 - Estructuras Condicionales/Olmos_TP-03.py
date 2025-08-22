@@ -91,3 +91,17 @@ if moda is not None:
         print("Sin sesgo claro según los criterios dados")
 else:
     print("No se puede determinar el sesgo por falta de moda clara")
+
+#----------------------------------------Ejercicio 7----------------------------------------
+# Solicitamos al usuario que ingrese una frase o palabra
+texto = input("Ingrese una frase o palabra: ")
+
+# Verificamos si la última letra es una vocal (mayúscula o minúscula)
+# Utilizamos la funcion lower() para hacer más fácil la verificación
+# sin importar si el usuario ingreso en mayúsculas o minúsculas
+if texto[-1].lower() in "aeiou":
+    # Si termina en vocal, añadimos un signo de exclamación
+    texto += "!"
+
+# Imprimimos el resultado
+print(texto)
