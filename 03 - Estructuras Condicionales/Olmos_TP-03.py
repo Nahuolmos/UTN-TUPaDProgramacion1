@@ -105,3 +105,26 @@ if texto[-1].lower() in "aeiou":
 
 # Imprimimos el resultado
 print(texto)
+
+#----------------------------------------Ejercicio 8----------------------------------------
+# Solicitamos el nombre al usuario y lo guardamos en la variable "nombre"
+nombre = input("Ingrese su nombre: ")
+
+# Solicitamos la opción que quiera al usuario y lo guardamos en la variable "opcion"
+print("Elija una opción para transformar su nombre:")
+print("1. Mayúsculas")
+print("2. Minúsculas")
+print("3. Primera letra mayúscula")
+opcion = input("Ingrese 1, 2 o 3: ")
+
+# Transformamos el nombre según la opción y lo guardamos en la variable "resultado"
+if opcion == "1":
+    resultado = nombre.upper()
+elif opcion == "2":
+    resultado = nombre.lower()
+elif opcion == "3":
+    resultado = nombre.title()
+else:
+    resultado = "Opción inválida"
+
+print("Resultado:", resultado)
