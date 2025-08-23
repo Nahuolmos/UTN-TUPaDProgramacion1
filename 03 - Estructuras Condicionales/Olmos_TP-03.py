@@ -54,7 +54,7 @@ elif edad >= 30:
 
 #----------------------------------------Ejercicio 5----------------------------------------
 # Solicitamos al usuario que ingrese una contraseña
-password = input("Ingrese su contraseña (8 a 14 caracteres): ")
+password : str = input("Ingrese su contraseña (8 a 14 caracteres): ")
 
 # Verificamos si la longitud de la contraseña es correcta
 if 8 <= len(password) <= 14:
@@ -94,7 +94,7 @@ else:
 
 #----------------------------------------Ejercicio 7----------------------------------------
 # Solicitamos al usuario que ingrese una frase o palabra
-texto = input("Ingrese una frase o palabra: ")
+texto : str = input("Ingrese una frase o palabra: ")
 
 # Verificamos si la última letra es una vocal (mayúscula o minúscula)
 # Utilizamos la funcion lower() para hacer más fácil la verificación
@@ -108,21 +108,21 @@ print(texto)
 
 #----------------------------------------Ejercicio 8----------------------------------------
 # Solicitamos el nombre al usuario y lo guardamos en la variable "nombre"
-nombre = input("Ingrese su nombre: ")
+nombre : str = input("Ingrese su nombre: ")
 
 # Solicitamos la opción que quiera al usuario y lo guardamos en la variable "opcion"
 print("Elija una opción para transformar su nombre:")
 print("1. Mayúsculas")
 print("2. Minúsculas")
 print("3. Primera letra mayúscula")
-opcion = input("Ingrese 1, 2 o 3: ")
+opcion : int = int(input("Ingrese 1, 2 o 3: "))
 
 # Transformamos el nombre según la opción y lo guardamos en la variable "resultado"
-if opcion == "1":
+if opcion == 1:
     resultado = nombre.upper()
-elif opcion == "2":
+elif opcion == 2:
     resultado = nombre.lower()
-elif opcion == "3":
+elif opcion == 3:
     resultado = nombre.title()
 else:
     resultado = "Opción inválida"
@@ -147,3 +147,32 @@ elif magnitud >= 7:
     print("Categoría: Extremo")
 else:
     print("Opción Inválida")
+
+#----------------------------------------Ejercicio 10---------------------------------------
+# Solicitamos al usuario que ingrese su hemisferio (Norte o Sur) 
+# y lo guardamos en la variable "hemisferio" en mayúscula
+hemisferio : str = input("Ingrese su hemisferio (N/S): ").upper()
+# Solicitamos al usuario que ingrese el día y el mes actual
+mes : str = int(input("Mes(1-12): "))
+dia : str = int(input("Día(1-31): "))
+# Determinamos en que estación se encuentra el usuario según hemisferio y fecha
+if hemisferio == "N":
+    if (mes == 12 and dia >= 21) or mes in [1, 2] or (mes == 3 and dia <= 20):
+        print("Estación: Invierno")
+    elif (mes == 6 and dia >= 21) or (mes in [7, 8]) or (mes == 9 and dia <= 20):
+        estacion = "Verano"
+    elif (mes == 9 and dia >= 21) or (mes in [10, 11]) or (mes == 12 and dia <= 20):
+        estacion = "Otoño"
+elif hemisferio == "S":
+    if (mes == 12 and dia >= 21) or (mes in [1, 2]) or (mes == 3 and dia <= 20):
+        estacion = "Verano"
+    elif (mes == 3 and dia >= 21) or (mes in [4, 5]) or (mes == 6 and dia <= 20):
+        estacion = "Otoño"
+    elif (mes == 6 and dia >= 21) or (mes in [7, 8]) or (mes == 9 and dia <= 20):
+        estacion = "Invierno"
+    elif (mes == 9 and dia >= 21) or (mes in [10, 11]) or (mes == 12 and dia <= 20):
+        estacion = "Primavera"
+else:
+    estacion = "Opción inválida"
+
+print("La estación actual es:", estacion)
