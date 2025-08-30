@@ -109,3 +109,19 @@ for i in range (0, cant_nums):
     suma += num
 media = suma/cant_nums
 print(f"La media de los valores ingresados es: {media}")
+
+#----------------------------------------Ejercicio 10----------------------------------------
+# Pedimos al usuario un número entero
+num = int(input("Ingresa un número: "))
+
+invertido = 0
+# Mientras el número no sea 0, vamos sacando de a un dígito
+while num > 0:
+    # Guardamos el último dígito
+    digito = num % 10
+    # Lo agregamos al número invertido
+    invertido = invertido * 10 + digito
+     # Eliminamos el último dígito del número original
+    num = num // 10
+
+print(f"Número invertido: {invertido}")
