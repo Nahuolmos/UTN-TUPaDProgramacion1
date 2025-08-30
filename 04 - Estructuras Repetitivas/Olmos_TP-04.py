@@ -98,3 +98,14 @@ print(f"Números impares ingresados: {impares}")
 print(f"Números positivos ingresados: {pos}")
 print(f"Números negativos ingresados: {negs}")
 
+#----------------------------------------Ejercicio 9----------------------------------------
+# Definimos en una sola linea la cantidad máxima de números que se le van a pedir al usuario
+cant_nums = 100
+# Creamos el bucle que pediría los números e inicializamos variables
+num : int = 0
+suma = 0
+for i in range (0, cant_nums):
+    num : int = int(input("Ingresa un número entero: "))
+    suma += num
+media = suma/cant_nums
+print(f"La media de los valores ingresados es: {media}")
