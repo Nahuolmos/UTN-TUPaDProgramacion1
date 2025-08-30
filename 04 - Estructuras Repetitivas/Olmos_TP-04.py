@@ -64,3 +64,12 @@ while bandera == True:
 for i in range(100, 0, -1):
     if i%2 == 0:
         print(i)
+
+#----------------------------------------Ejercicio 7----------------------------------------
+# Pedimos al usuario que ingrese el máximo del intervalo
+num_max : int = int(input("Ingrese el límite de la sucesión: "))
+suma = 0
+for i in range(0,num_max):
+    suma += i
+print(f"La suma total es: {suma}")
+
