@@ -57,3 +57,10 @@ while bandera == True:
     if respuesta == num_azar:
         print(f"Adivinaste! en {intentos} intentos")
         bandera = False
+
+#----------------------------------------Ejercicio 6----------------------------------------
+# Podríamos definir la condicion directamente en el paso en la funcion range poniendo en -2 
+# pero definimos la condicion dentro de un if por si queremos cambiar la condición que sea más fácil
+for i in range(100, 0, -1):
+    if i%2 == 0:
+        print(i)
