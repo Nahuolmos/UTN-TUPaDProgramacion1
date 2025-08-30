@@ -73,3 +73,28 @@ for i in range(0,num_max):
     suma += i
 print(f"La suma total es: {suma}")
 
+#----------------------------------------Ejercicio 8----------------------------------------
+# Pedimos al usuario que ingrese los números e inicializamos las variables para clasificarlos
+pares : int = 0
+impares : int = 0
+pos : int = 0
+negs : int = 0
+for i in range (0,10):
+    num : int = int(input("Ingrese un número entero: "))
+    # clasificamos
+    if num%2 == 0:
+        pares += 1
+    if num%2 != 0:
+        impares += 1
+    if num > 0:
+        pos += 1
+    elif num < 0:
+        negs += 1
+    else:
+        continue
+# Mostramos el conteo total
+print(f"Números pares ingresados: {pares}")
+print(f"Números impares ingresados: {impares}")
+print(f"Números positivos ingresados: {pos}")
+print(f"Números negativos ingresados: {negs}")
+
