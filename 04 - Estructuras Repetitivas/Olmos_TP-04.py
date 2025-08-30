@@ -38,3 +38,22 @@ while bandera == True:
         bandera = False
 print(f"Suma total: {suma}")
 
+#----------------------------------------Ejercicio 5----------------------------------------
+# Importamos la libreria random para poder generar el número aleatorio
+import random
+num_azar = random.randint(0,9)
+
+# Creamos el bucle para que el usuario intente adivinar (asumiendo que solamente ingrese enteros)
+bandera = True
+respuesta = 0
+intentos = 0
+while bandera == True:
+    if intentos == 0:
+        respuesta : int = int(input("Intenta adivinar el número secreto: "))
+        intentos += 1
+    elif intentos > 0 and respuesta != num_azar:
+        respuesta : int = int(input("Casi! Intenta de nuevo: "))
+        intentos += 1
+    if respuesta == num_azar:
+        print(f"Adivinaste! en {intentos} intentos")
+        bandera = False
