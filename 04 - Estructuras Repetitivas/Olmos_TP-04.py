@@ -24,3 +24,17 @@ num_max : int = int(input("Ingrese el valor máximo del intervalo: "))
 print(f"Los número del intervalo ({num_min}, {num_max}) son: ")
 for i in range((num_min+1), num_max):
     print(i)
+
+#----------------------------------------Ejercicio 4----------------------------------------
+# Creamos el bucle while ya que no sabemos cuántos numeros ingresasaría el usuario
+bandera = True
+suma = 0
+while bandera == True:
+    num : int = int(input("Ingrese un número o 0 para terminar la secuencia: "))
+    suma += num
+    # definimos la condición para finalizar el bucle
+    if num == 0:
+        print(f"Secuencia finalizada")
+        bandera = False
+print(f"Suma total: {suma}")
+
