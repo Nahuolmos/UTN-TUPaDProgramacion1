@@ -14,3 +14,13 @@ cont = 0
 while cont < len(num):
     cont += 1
 print(f"Cantidad de caracteres: {cont}")
+
+#----------------------------------------Ejercicio 3----------------------------------------
+# Pedimos al usuario que ingrese los valores minimos y maximos del intervalo
+num_min : int = int(input("Ingrese el valor mínimo del intervalo: "))
+num_max : int = int(input("Ingrese el valor máximo del intervalo: "))
+
+# Mostramos el resultado
+print(f"Los número del intervalo ({num_min}, {num_max}) son: ")
+for i in range((num_min+1), num_max):
+    print(i)
