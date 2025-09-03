@@ -13,3 +13,14 @@ lista = [1, 2, 3, 4, 5]
 # Pedimos mostrar el elemento "-2" ya que al utilizar el número negativo accedemos al penúltimo
 # elemento, sin necesidad de saber exactamente la longitud de la lista
 print(lista[-2])
+
+#----------------------------------------Ejercicio 3----------------------------------------
+# Creamos la lista vacía
+lista = []
+# Agregamos las palabras
+lista.append("Hola")
+lista.append("como")
+lista.append("estas?")
+# Imprimimos la lista resultante
+print(lista)
+
