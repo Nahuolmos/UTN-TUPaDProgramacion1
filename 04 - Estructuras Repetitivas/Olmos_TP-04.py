@@ -5,15 +5,23 @@ for i in range(101):
     print(i)
 
 #----------------------------------------Ejercicio 2----------------------------------------
-# Pedimos al usuario que ingrese un numero entero, pero lo guardamos como cadena para poder contar
-# sus "dígitos" (que serían los caracteres)
-num : str =input("Ingrese un número entero: ")
-
-# Creamos una variable contador que guarda la cantidad de dígitos y lo mostramos (aunque sería más fácil utilizar la funcion len())
-cont = 0
-while cont < len(num):
-    cont += 1
-print(f"Cantidad de caracteres: {cont}")
+# Pedimos al usuario que ingrese un numero entero y validamos que lo sea
+bandera : bool = True
+while bandera:
+    numero = input("Ingrese un número entero: ")
+    # Validamos que no sea una cadena de caracteres
+    if not numero.isalpha():
+        contador : int = 0
+        # Ignoramos el signo si es un número negativo
+        for i in numero:
+            if i != "-":
+                contador += 1
+        # Imprimimos el resultado
+        print(f"La longitud de {numero} es: {contador}")
+        bandera = False
+    else:
+        print("Valor inválido")
+        print()
 
 #----------------------------------------Ejercicio 3----------------------------------------
 # Pedimos al usuario que ingrese los valores minimos y maximos del intervalo
