@@ -24,3 +24,13 @@ lista.append("estas?")
 # Imprimimos la lista resultante
 print(lista)
 
+#----------------------------------------Ejercicio 4----------------------------------------
+# Creamos la lista original
+animales = ["perro", "gato", "conejo", "pez"]
+
+# Reemplazamos los valores
+animales[1] = "loro"
+animales[-1] = "oso"
+
+# Imprimimos la lista para ver las modificaciones
+print(animales)
