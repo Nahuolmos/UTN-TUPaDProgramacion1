@@ -90,3 +90,18 @@ compras[0].remove("pan")
 print
 print(f"Lista final: {compras}")
 
+#----------------------------------------Ejercicio 10----------------------------------------
+# Creamos una lista base
+lista_anidada = [0, 0, [0, 0, 0], 0]
+
+# Reemplazamos cada valor con lo que nos piden
+lista_anidada[0] = 15
+lista_anidada[1] = True
+lista_anidada[2][0] = 25.5
+lista_anidada[2][1] = 57.9
+lista_anidada[2][2] = 30.6
+lista_anidada[3] = False
+
+# Imprimimos
+print(lista_anidada)
+
