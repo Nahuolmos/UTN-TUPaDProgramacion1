@@ -34,3 +34,11 @@ animales[-1] = "oso"
 
 # Imprimimos la lista para ver las modificaciones
 print(animales)
+
+#----------------------------------------Ejercicio 5----------------------------------------
+# El programa que se nos presenta es el siguiente:
+numeros = [8, 15, 3, 22, 7]
+numeros.remove(max(numeros))
+print(numeros)
+# Su funcionamiento es simple, primero se crea la lista de números, luego se elimina el valor 
+# más grande de esta y finalmente se imprime la lista resultante
