@@ -42,3 +42,11 @@ numeros.remove(max(numeros))
 print(numeros)
 # Su funcionamiento es simple, primero se crea la lista de números, luego se elimina el valor 
 # más grande de esta y finalmente se imprime la lista resultante
+
+#----------------------------------------Ejercicio 6----------------------------------------
+# Creamos la lista con la función range casteado a tipo lista
+numeros = list(range(10,31,5))
+
+# Imprimimos por pantalla los 2 primeros elementos
+print(f"Primer elemento: {numeros[0]}")
+print(f"Segundo elemento: {numeros[1]}")
