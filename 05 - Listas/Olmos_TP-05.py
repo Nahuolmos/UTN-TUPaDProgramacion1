@@ -50,3 +50,12 @@ numeros = list(range(10,31,5))
 # Imprimimos por pantalla los 2 primeros elementos
 print(f"Primer elemento: {numeros[0]}")
 print(f"Segundo elemento: {numeros[1]}")
+
+#----------------------------------------Ejercicio 7----------------------------------------
+# Creamos la lista original
+autos = ["sedan", "polo", "suran", "gol"]
+
+# Reemplazamos los valores del medio
+autos[1] = "vento"
+autos[2] = "t-cross"
+
