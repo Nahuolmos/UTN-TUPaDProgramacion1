@@ -59,3 +59,17 @@ autos = ["sedan", "polo", "suran", "gol"]
 autos[1] = "vento"
 autos[2] = "t-cross"
 
+#----------------------------------------Ejercicio 8----------------------------------------
+# Crear una lista vacía llamada "dobles" y agregar el doble de 5, 10 y 15 usando append
+# directamente. Imprimir la lista resultante por pantalla.
+# Creamos la lista vacía
+dobles = []
+
+# Añadimos directamente los valores que se nos piden
+dobles.append(2*5)
+dobles.append(2*10)
+dobles.append(2*15)
+
+# Imprimimos la lista resultante
+print(dobles)
+
