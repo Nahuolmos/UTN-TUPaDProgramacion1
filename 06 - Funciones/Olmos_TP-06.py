@@ -30,3 +30,9 @@ def calcular_perimetro_circulo(radio):
 radio : float = float(input("Ingrese el radio del círculo: "))
 print("El área del círculo es: ", calcular_area_circulo(radio))
 print("El perímetro del círculo es: ", calcular_perimetro_circulo(radio))
+#----------------------------------------Ejercicio 5----------------------------------------
+def segundos_a_horas(segundos):
+    return segundos/60
+
+segundos = int(input("Ingrese la cantidad de segundos: "))
+print("Su equivalente en horas es: ", segundos_a_horas(segundos))
