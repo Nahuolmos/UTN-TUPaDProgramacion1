@@ -19,3 +19,14 @@ apellido = input("Ingrese su apellido: ")
 edad : int = int(input("Ingrese su edad: "))
 residencia = input("Ingrese su lugar de residencia: ")
 informacion_personal(nombre, apellido, edad, residencia)
+#----------------------------------------Ejercicio 4----------------------------------------
+from math import pi
+def calcular_area_circulo(radio):
+    return pi * radio ** 2
+
+def calcular_perimetro_circulo(radio):
+    return 2 * pi * radio
+
+radio : float = float(input("Ingrese el radio del círculo: "))
+print("El área del círculo es: ", calcular_area_circulo(radio))
+print("El perímetro del círculo es: ", calcular_perimetro_circulo(radio))
