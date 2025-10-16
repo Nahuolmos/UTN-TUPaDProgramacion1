@@ -79,3 +79,13 @@ def celsius_a_fahrenheit(celsius):
 
 celsius : float = float(input("Ingrese la temperatura en °C: "))
 celsius_a_fahrenheit(celsius)
+#----------------------------------------Ejercicio 10----------------------------------------
+def calcular_promedio(a, b, c):
+    promedio : float = (a + b + c) / 3
+    print("El promedio de los números es: ", promedio)
+
+print("Ingrese 3 números:")
+a : float = float(input("a: "))
+b : float = float(input("b: "))
+c : float = float(input("c: "))
+calcular_promedio(a, b, c)
