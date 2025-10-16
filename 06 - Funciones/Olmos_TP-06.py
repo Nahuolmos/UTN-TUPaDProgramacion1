@@ -36,3 +36,10 @@ def segundos_a_horas(segundos):
 
 segundos = int(input("Ingrese la cantidad de segundos: "))
 print("Su equivalente en horas es: ", segundos_a_horas(segundos))
+#----------------------------------------Ejercicio 6----------------------------------------
+def tabla_multiplicar(numero):
+    for i in range(1, 11):
+        print(f"{numero}x{i} = {numero*i}")
+
+numero = int(input("Ingrese un número para ver su tabla de multiplicar: "))
+tabla_multiplicar(numero)
