@@ -64,3 +64,11 @@ print(f"Suma: {resultados[0]}")
 print(f"Resta: {resultados[1]}")
 print(f"Multiplicación: {resultados[2]}")
 print(f"División: {resultados[3]}")
+#----------------------------------------Ejercicio 8----------------------------------------
+def calcular_imc(peso, altura):
+    IMC : float = peso / (altura ** 2)
+    return IMC
+
+peso = float(input("Ingrese el peso en kg: "))
+altura = float(input("Ingrese la altura en m: "))
+print(f"El IMC (Indice de Masa Corporal): {calcular_imc(peso, altura)}%")
