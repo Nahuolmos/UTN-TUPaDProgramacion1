@@ -72,3 +72,10 @@ def calcular_imc(peso, altura):
 peso = float(input("Ingrese el peso en kg: "))
 altura = float(input("Ingrese la altura en m: "))
 print(f"El IMC (Indice de Masa Corporal): {calcular_imc(peso, altura)}%")
+#----------------------------------------Ejercicio 9----------------------------------------
+def celsius_a_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    print(f"El equivalente a {celsius}°C es: {fahrenheit}°F")
+
+celsius : float = float(input("Ingrese la temperatura en °C: "))
+celsius_a_fahrenheit(celsius)
