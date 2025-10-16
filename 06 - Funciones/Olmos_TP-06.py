@@ -43,3 +43,24 @@ def tabla_multiplicar(numero):
 
 numero = int(input("Ingrese un número para ver su tabla de multiplicar: "))
 tabla_multiplicar(numero)
+#----------------------------------------Ejercicio 7----------------------------------------
+def operaciones_basicas(a, b):
+    suma = a + b
+    resta = a - b
+    multiplicacion = a * b
+    if b != 0:
+        division = a / b 
+    else: 
+        print("No se puede dividir por cero")
+
+    return (suma, resta, multiplicacion, division)
+
+a : float = float(input("Ingrese el primer número: "))
+b : float = float(input("Ingrese el segundo número: "))
+
+resultados : tuple = operaciones_basicas(a, b)
+
+print(f"Suma: {resultados[0]}")
+print(f"Resta: {resultados[1]}")
+print(f"Multiplicación: {resultados[2]}")
+print(f"División: {resultados[3]}")
