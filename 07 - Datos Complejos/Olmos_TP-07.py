@@ -35,3 +35,21 @@ def buscar_por_nombre(nombre_a_buscar):
 
 nombre_a_buscar = input("Ingrese el nombre del contacto a buscar: ")
 buscar_por_nombre(nombre_a_buscar)
+
+#----------------------------------------Ejercicio 5----------------------------------------
+# Solicitamos una frase al usuario
+frase = input("Ingresa una frase: ")
+# Separa la frase en palabras
+palabras = frase.split()
+# Devolver las palabras únicas usando un set
+palabras_unicas = set(palabras)
+# Crea un diccionario con la cantidad de veces que aparece cada palabra
+frecuencias = {}
+for palabra in palabras:
+    frecuencias[palabra] = frecuencias.get(palabra, 0) + 1
+# Muestra los resultados
+print("Palabras únicas:")
+print(palabras_unicas)
+print("Frecuencia de cada palabra:")
+print(frecuencias)
+
