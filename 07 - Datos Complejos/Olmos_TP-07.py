@@ -86,3 +86,46 @@ print("Aprobaron solo uno de los dos:", solo_uno)
 al_menos_uno = parcial1 | parcial2
 print("Aprobaron al menos un parcial:", al_menos_uno)
 
+#----------------------------------------Ejercicio 8----------------------------------------
+dict = {"leche": 10, "huevos": 30, "manteca": 15, "galletas": 20, "tortitas": 12}
+bandera = True
+
+while bandera:
+    print("Opciones: ")
+    print("|1. Consultar stock de un producto")
+    print("|2. Modificar stock de un producto")
+    print("|3. Agregar producto y stock")
+    print("|4. Salir")
+    consulta = input("> ")
+    while consulta not in ("1", "2", "3", "4"):
+        consulta = input("Por favor, ingrese un comando válido: 1, 2 ó 3: ")
+
+    if consulta == "1":
+        producto = input("¿De qué producto desea consultar el stock?: ")
+        while producto.lower() not in dict:
+            producto = input(f"Los productos con stock son {list(dict.keys())}. Ingrese un producto de la lista: ")
+        print(f"Hay {dict[producto.lower()]} unidades del producto {producto} en stock.")
+
+    elif consulta == "2":
+        producto = input("¿De qué producto desea actualizar el stock?: ")
+        while producto.lower() not in dict:
+            producto = input(f"Los productos con stock son {list(dict.keys())}. Ingrese un producto de la lista: ")
+        unidades = input(f"¿Cuántas unidades de {producto} hay en stock?: ")
+        while not unidades.isdigit():
+            unidades = input("Ingrese una cantidad válida: ")
+        dict[producto.lower()] = unidades
+        print(f"Ahora hay {dict[producto.lower()]} unidades del producto {producto} en stock.")
+
+    elif consulta == "3":
+        producto = input("¿Qué producto desea agregar al stock?: ")
+        while producto.lower() in dict:
+            producto = input(f"Los productos con stock son {list(dict.keys())}. Ingrese un producto que no esté en la lista para agregar: ")
+        unidades = input(f"¿Cuántas unidades de {producto} hay en stock?: ")
+        while not unidades.isdigit():
+            unidades = input("Ingrese una cantidad válida: ")
+        dict[producto.lower()] = unidades
+        print(f"Ahora hay {dict[producto.lower()]} unidades del producto {producto} en stock.")
+
+    else:
+        bandera = False
+        print("¡Adiós!")
