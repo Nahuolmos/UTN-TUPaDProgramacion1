@@ -142,3 +142,15 @@ if dia_y_hora not in agenda:
     print("No tienes actividades ese día a esa hora.")
 else:
     print(f"Tienes {agenda[dia_y_hora]} ese día a esa hora.")
+
+#----------------------------------------Ejercicio 10----------------------------------------
+original = {"Argentina": "CABA", "Chile": "Santiago", "Bután": "Timbu"}
+invertido = {}
+
+paises = list(original.keys())
+capitales = list(original.values())
+
+for i in range(len(paises)):
+    invertido[capitales[i]] = paises[i]
+
+print(invertido)
